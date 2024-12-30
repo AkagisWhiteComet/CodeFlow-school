@@ -1,0 +1,505 @@
+@media (min-width: 700px) {
+/* ШРИФТЫ */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
+
+
+/* ОСНОВНОЙ СТИЛЬ */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: "Manrope", sans-serif;
+	background: lightgray;
+}
+
+.container {
+	max-width: 1450px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+
+/* Шапка */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	height: 90px;
+	background: white;
+	padding: 0 15px;
+}
+
+header a {
+	text-decoration: none;
+	color: #000000;
+}
+
+header button:hover {
+	color: white;
+}
+
+.logo {
+	width: 150px;
+	height: 80px;
+}
+
+.nav-list {
+	display: flex;
+	gap: 300px;
+	font-size: 20px;
+}
+
+a:hover {
+	color: lightgray;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: black;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.header-btn {
+	background: #b4b4b4;
+	border: none;
+	width: 200px;
+	height: 50px;
+	border-radius: 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+/* Приветственная секция */
+.welcome {
+	background: url(/images/header_bg.jpg);
+	color: white;
+	margin-bottom: 30px;
+}
+
+.welcome-text {
+	width: 600px;
+	text-align: center;
+	font-size: 28px;
+}
+
+.welcome .container {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+
+/* О компании */
+.about .container {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.about-text {
+	max-width: 750px;
+}
+
+
+/* Почему мы? */
+.why-we .container {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.why-we {
+	background: darkgray;
+	padding: 20px 0 100px 0;
+	margin-bottom: 0;
+}
+
+.whywe-list {
+	height: 400px;
+	font-size: 24px;
+	align-content: center;
+}
+
+
+/* Форма для записи */
+.form {
+	background: url(/images/form_bg.jpg);
+	height: 605px;
+	color: white;
+	margin-bottom: 0;
+}
+
+.form .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 120px 50px 0 200px;
+	gap: 100px;
+}
+
+.inputs-list {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
+}
+
+input {
+	width: 550px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	margin-bottom: 10px;
+	padding: 5px 0 5px 20px;
+}
+
+.select-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+	margin-bottom: 20px;
+}
+
+.form-btn {
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	border-radius: 10px;
+	font-weight: 700;
+	background-color: #000000;
+	color: white;
+}
+
+.form-text {
+	font-size: 36px;
+	max-width: 680px;
+	text-align: center;
+}
+
+.form h1 {
+	margin: 0;
+	padding-top: 30px;
+}
+
+#course-select {
+	width: 300px;
+}
+
+
+/* Подвал */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 50px;
+	background: black;
+	height: 100px;
+	font-size: 14px;
+	color: white;
+}
+
+
+
+
+
+/* СТРАНИЦА КУРСОВ */
+.courses-main {
+	padding-top: 40px;
+}
+
+section {
+	margin-bottom: 90px;
+}
+
+h1 {
+	margin: 0 0 45px 0;
+}
+
+.description-list {
+	list-style-type: circle;
+	margin-left: 30px;
+}
+
+.card-container {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	justify-content: space-around;
+}
+
+.cost {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.left-img {
+	width: 560px;
+	height: 500px;
+	border-radius: 30px 0 0 30px;
+	object-fit: fill;
+}
+
+.right-img {
+	margin-left: 32px;
+	width: 560px;
+	height: 500px;
+	border-radius: 0 30px 30px 0;
+	object-fit: cover;
+}
+
+.text-left {
+	display: block;
+	margin-left: 40px;
+}
+
+.left-img {
+	margin-right: 20px;
+	object-fit: cover;
+}
+
+.courses-main h2 {
+	text-align: center;
+}
+
+
+/* Фронтенд */
+.frontend {
+	display: flex;
+	width: 1428px;
+	height: 500px;
+	border-radius: 30px;
+	background: #180837;
+	color: white;
+	margin-left: 246px;
+}
+
+.frontend .text-right {
+	max-width: 800px;
+	margin-bottom: 45px;
+}
+
+.frontend h2 {
+	margin-bottom: 11px;
+}
+
+
+/* Бэкенд */
+.backend {
+	display: flex;
+	width: 1428px;
+	height: 500px;
+	border-radius: 30px;
+	background: #000002;
+	color: white;
+	margin-left: 246px;
+}
+
+.backend .text-left {
+	max-width: 800px;
+	margin: 0 0 20px 40px;
+}
+
+.backend h2 {
+	margin-bottom: 10px;
+}
+
+
+/* Питон */
+.python {
+	display: flex;
+	width: 1428px;
+	height: 500px;
+	border-radius: 30px;
+	background: #000915;
+	color: white;
+	margin-left: 246px;
+}
+
+.python .text-right {
+	margin-left: 20px;
+}
+
+
+/* Фулстэк */
+.fullstack {
+	display: flex;
+	width: 1428px;
+	height: 500px;
+	border-radius: 30px;
+	background: #002B54;
+	color: white;
+	margin-left: 246px;
+}
+
+.fullstack h2 {
+	margin-bottom: 25px;
+}
+
+.fullstack .cost {
+	margin-bottom: 30px;
+}
+
+.select-list {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
+/* СТРАНИЦА ПРЕПОДАВАТЕЛЕЙ */
+.teacher-main {
+	padding-top: 30px;
+}
+
+.teachers {
+	background-color: #373737;
+}
+
+.teachers h1 {
+	font-size: 24px;
+	color: white;
+}
+
+.teachers h3 {
+	font-size: 18px;
+	margin-bottom: 3px;
+}
+
+.teachers p {
+	font-size: 14px;
+}
+
+.teachers footer {
+	margin-top: 175px;
+}
+
+.teacher-container {
+	display: flex;
+	justify-content: center;
+	gap: 210px;
+}
+
+.teacher {
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+	height: 480px;
+	background: #ECECEC;
+	border-radius: 15px;
+}
+
+.teacher-container img {
+	width: 360px;
+	height: 372px;
+	object-fit: cover;
+	border-radius: 15px 15px 0 0;
+}
+
+.text-block {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+
+
+
+
+/* ОТЗЫВЫ */
+.reviews-main {
+	padding-top: 30px;
+}
+
+.reviews-main h1 {
+	font-size: 24px;
+}
+
+.reviews {
+	background-color: #BCBCBC;
+}
+
+.reviews-container {
+	display: flex;
+	justify-content: center;
+	gap: 144px;
+	margin-bottom: 0;
+}
+
+.review {
+	display: flex;
+	flex-direction: column;
+	width: 380px;
+	height: 320px;
+	background-color: #ffffff;
+	border-radius: 30px;
+	font-size: 20px;
+}
+
+.review-text {
+	max-width: 317px;
+	margin: 0 0 70px 33px;
+}
+
+.stripe {
+	width: 317px;
+	height: 2px;
+	background-color: #939393;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-left: 17px;
+}
+
+.date-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 360px;
+	color: #939393;
+	text-align: center;
+}
+
+.date-text p {
+	margin-left: 20px;
+}
+
+.third {
+	margin-bottom: 43px;
+}
+
+.reviews footer {
+	margin-top: 335px;
+}
+
+}
