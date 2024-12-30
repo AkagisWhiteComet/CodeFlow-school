@@ -93,7 +93,7 @@ ul {
 
 /* Приветственная секция */
 .welcome {
-	background: url(/images/headerbg.jpg);
+	background: url(../images/headerbg.jpg);
 	color: white;
 	margin-bottom: 30px;
 }
@@ -145,7 +145,7 @@ ul {
 
 /* Форма для записи */
 .form {
-	background: url(/images/formbg.jpg);
+	background: url(../images/formbg.jpg);
 	height: 605px;
 	color: white;
 	margin-bottom: 0;
